@@ -70,6 +70,13 @@ find_package(catkin REQUIRED COMPONENTS
 #   std_msgs
 # )
 
+## Declare ROS messages and services
+#add_message_files(FILES Num.msg)
+#add_service_files(FILES AddTwoInts.srv)
+
+## Generate added messages and services
+#generate_messages(DEPENDENCIES std_msgs)
+
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -105,6 +112,7 @@ include_directories(
 ## Declare a cpp executable
 # add_executable(beginner_tutorals_node src/beginner_tutorals_node.cpp)
 
+
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(beginner_tutorals_node beginner_tutorals_generate_messages_cpp)
@@ -113,6 +121,16 @@ include_directories(
 # target_link_libraries(beginner_tutorals_node
 #   ${catkin_LIBRARIES}
 # )
+
+#include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(talker src/talker.cpp)
+target_link_libraries(talker ${catkin_LIBRARIES})
+#add_dependencies(talker beginner_tutorials_generate_messages_cpp)
+
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+#add_dependencies(listener beginner_tutorials_generate_messages_cpp)
 
 #############
 ## Install ##
