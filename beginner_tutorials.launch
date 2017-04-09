@@ -1,0 +1,9 @@
+<launch> 
+
+<node pkg="beginner_tutorials" type="talker" name="talker" launch-prefix="xterm -e"> 
+<param name="frequency" value="2"/>
+</node>
+
+<node pkg="beginner_tutorials" type="listener" name="listener" launch-prefix="xterm -e"/>
+</launch>
+
