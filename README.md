@@ -1,6 +1,17 @@
-This is the first ROS pratice based on tutorials
+-Overall
 
-src folder contains publisher and subscriber cpp files, cppcheck and cpplint results.
+ *This is the ROS pratice based on tutorials.
 
-ScreenShot folder has the screenshots of doing tutorials
+ *src folder contains publisher and subscriber cpp files, cppcheck and cpplint results.
+
+ *ScreenShot folder has the screenshots of doing tutorials.
+
+-Update for Week10
+
+ * add service in talker.cpp to send 5 seversity level message to topic chatter
+ * add screenshot of console and logger_level
+
+
+
+
 
